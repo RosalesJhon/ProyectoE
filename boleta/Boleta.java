@@ -9,18 +9,20 @@ public class Boleta {
 
     public static void main(String[] args) {
         
-        //creacion de ventana
+        // Creacion de ventana
         JFrame ventana = new JFrame("Boleta");
         ventana.setSize(500,600);
         ventana.setResizable(false);
         ventana.setLocationRelativeTo(null);
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
+        // Crearcion de panel
         JPanel panel = new JPanel();
         panel.setBackground(Color.WHITE);
         panel.setLayout(null);
-
-        JLabel h1 = new JLabel("AlienzWare");
+        
+        // Titulo
+        JLabel h1 = new JLabel("AliensWare");
         h1.setFont(new Font("Arial", Font.BOLD, 20));
         h1.setBounds(0, 10, 500, 50);
         h1.setHorizontalAlignment(JLabel.CENTER);
@@ -29,9 +31,15 @@ public class Boleta {
         h1.setOpaque(true);
         panel.add(h1);
         
-        JLabel imagenLabel = new JLabel(new ImageIcon("Logo.png"));
-        imagenLabel.setBounds(100, 100, imagenLabel.getIcon().getIconWidth(), imagenLabel.getIcon().getIconHeight());
-        panel.add(imagenLabel);
+        //  Datos 
+        
+        JLabel nombre = new JLabel("Nombres");
+        nombre.setFont(new Font("Arial", Font.PLAIN, 15));
+        nombre.setBounds(10, 200, 100, 20);
+        nombre.setBackground(Color.BLACK);
+        nombre.setOpaque(true);
+        nombre.setBackground(Color.WHITE);
+        panel.add(nombre);
         
         ventana.add(panel);
         ventana.setVisible(true);
