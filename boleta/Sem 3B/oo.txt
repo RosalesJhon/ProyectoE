@@ -1,0 +1,40 @@
+bg='blue', bd=0,fg="white",font=('Times'),     botones
+
+.config(bg='#fcfcfc')      color de fondo listaaaaaaaaaaaa
+
+
+highlightbackground = "black", highlightcolor= "blue", highlightthickness=1,     entrys ewt45rety4wueryfe
+
+
+'#FF0000': rojo brillante
+'#00FF00': verde brillante
+'#0000FF': azul brillante
+'#FFFF00': amarillo brillante
+'#FF00FF': rosa brillante
+'#00FFFF': cian brillante
+
+black (negro)
+blue (azul)
+brown (marrón)
+cyan (cian)
+gray (gris)
+green (verde)
+lime (lima)
+magenta (magenta)
+orange (naranja)
+pink (rosa)
+purple (púrpura)
+red (rojo)
+white (blanco)
+yellow (amarillo)
+
+,activebackground="#00FF00", highlightbackground="black"           clik button
+
+imagen--------
+
+image3 = Image.open("./impri.jpg")
+image3 = image3.resize((70, 68))
+photo3 = ImageTk.PhotoImage(image3)
+img_label3 = tk.Label(ventana, image=photo3)
+img_label3.image = photo3  # Evita que la imagen se borre automáticamente
+img_label3.place(x=60,y=150)

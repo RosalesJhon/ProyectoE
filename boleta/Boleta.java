@@ -1,6 +1,4 @@
 
-package com.mycompany.boleta;
-
 import java.awt.Color;
 import java.awt.Font;
 import javax.swing.*;
@@ -29,9 +27,7 @@ public class Boleta {
         h1.setOpaque(true);
         panel.add(h1);
         
-        JLabel imagenLabel = new JLabel(new ImageIcon("Logo.png"));
-        imagenLabel.setBounds(100, 100, imagenLabel.getIcon().getIconWidth(), imagenLabel.getIcon().getIconHeight());
-        panel.add(imagenLabel);
+        
         
         ventana.add(panel);
         ventana.setVisible(true);
